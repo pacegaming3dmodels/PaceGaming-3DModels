@@ -20,6 +20,11 @@
       margin: 0;
       color: #00ffd5;
     }
+    p {
+      margin: 5px 0 15px;
+      font-size: 18px;
+      color: #ccc;
+    }
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -31,6 +36,7 @@
       padding: 15px;
       border-radius: 12px;
       text-align: center;
+      box-shadow: 0 0 8px rgba(0,255,213,0.3);
     }
     iframe {
       width: 100%;
@@ -47,22 +53,36 @@
       text-decoration: none;
       border-radius: 20px;
       font-weight: bold;
+      transition: 0.2s;
+    }
+    .buy:hover {
+      background: #00e6c2;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Pace 3D Studio</h1>
-  <p>Game-ready battle royale style 3D models</p>
+  <p>Game‑ready battle royale style 3D models</p>
 </header>
 
 <div class="container">
 
+  <!-- MODEL CARD #1 -->
   <div class="card">
     <iframe src="https://sketchfab.com/models/f832ead046e04670bd1d8d9f619e74ba/embed" allowfullscreen></iframe>
     <h2>Battle Royale Character</h2>
+    <!-- Replace below link with your valid Creem payment link -->
     <a class="buy" href="https://www.creem.io/test/payment/prod_4BwgXcvLej9fhuEqMMm6e4">Buy Now</a>
+  </div>
+
+  <!-- MODEL CARD #2 (optional, duplicate format) -->
+  <div class="card">
+    <iframe src="https://sketchfab.com/models/INSERT_MODEL_ID/embed" allowfullscreen></iframe>
+    <h2>Assault Warrior</h2>
+    <a class="buy" href="https://www.creem.io/your-live-payment-link-here">Buy Now</a>
   </div>
 
 </div>
