@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pace 3D Studio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background: #111;
-      border-bottom: 1px solid #222;
-    }
-    h1 {
-      margin: 0;
-      color: #00ffd5;
-    }
-    p {
-      color: #ccc;
-    }
-    .container {
-      padding: 40px;
-    }
-    .note {
-      opacity: 0.7;
-      font-size: 18px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Pace 3D Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+header{
+  padding:20px;
+  text-align:center;
+  background:#111;
+  border-bottom:1px solid #222;
+}
+h1{
+  margin:0;
+  color:#00ffd5;
+}
+p{
+  color:#bbb;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  padding:30px;
+}
+.card{
+  background:#161616;
+  border-radius:12px;
+  padding:10px;
+}
+iframe{
+  width:100%;
+  height:260px;
+  border:none;
+  border-radius:10px;
+}
+.model-title{
+  margin:10px 0;
+  font-size:18px;
+}
+.buy{
+  display:block;
+  margin:10px auto;
+  padding:10px;
+  width:140px;
+  background:#00ffd5;
+  color:black;
+  text-decoration:none;
+  border-radius:20px;
+  font-weight:bold;
+}
+.buy:hover{
+  background:#00e6c2;
+}
+footer{
+  text-align:center;
+  padding:15px;
+  color:#666;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
@@ -40,9 +76,27 @@
   <p>Game-ready battle royale style 3D models</p>
 </header>
 
-<div class="container">
-  <p class="note">Models coming soon…</p>
+<div class="gallery">
+
+  <!-- MODEL 1 -->
+  <div class="card">
+    <iframe src="https://sketchfab.com/models/f832ead046e04670bd1d8d9f619e74ba/embed" allowfullscreen></iframe>
+    <div class="model-title">Battle Royale Character</div>
+    <a class="buy" href="#">Buy Now</a>
+  </div>
+
+  <!-- MODEL 2 -->
+  <div class="card">
+    <iframe src="https://sketchfab.com/models/386cf5f2c00341109e3fe07617a3dc1d/embed" allowfullscreen></iframe>
+    <div class="model-title">Freefire Girl Character</div>
+    <a class="buy" href="#">Buy Now</a>
+  </div>
+
 </div>
+
+<footer>
+  © 2026 Pace 3D Studio
+</footer>
 
 </body>
 </html>
